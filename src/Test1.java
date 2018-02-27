@@ -8,7 +8,7 @@
 public class Test1 {
 	public static void main(String[] args) {
 //		printIntBinary(10);
-		printFloatBinary(9);
+		printFloatBinary(9.0f);
 	}
 	
 	private static void printIntBinary(int num) {
