@@ -7,7 +7,7 @@
  */
 public class TestGC3 {
 	public static void main(String[] args) {
-		met1();
+		met4();
 	}
 	
 	public static void met1() {
@@ -37,6 +37,15 @@ public class TestGC3 {
 		byte[] b = null;
 		for(int i = 0; i < 10; i++) {
 			b = new byte[1 * 1024 * 1024];
+		}
+		System.gc();
+	}
+	
+	public static void met4() {
+		for(int i = 0; i < 10; i++) {
+			if(i == 0) {
+				byte[] b = new byte[1 * 1024 * 1024];
+			}
 		}
 		System.gc();
 	}
