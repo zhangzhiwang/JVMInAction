@@ -18,8 +18,9 @@ public class TestBadFinalize {
 	}
 	
 	public static void main(String[] args) {
-		for(int i = 0; i < 50000; i++) {
+		for(int i = 0; i < Integer.MAX_VALUE; i++) {
 			TestBadFinalize t = new TestBadFinalize();
+//			Test1 t = new Test1();
 		}
 	}
 }
